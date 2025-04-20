@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:wght@100;400;500;700&display=swap");
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 10%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: Black;
+  font-weight: 700;
+  position: absolute;
+  right: 95%;
+  transform: translateY(-5px);
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+.navbar {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: Black;
+  margin-left: 45px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #598dbd;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}

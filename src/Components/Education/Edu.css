@@ -1,0 +1,148 @@
+.edu {
+  padding: 20px;
+  margin: 0 190px;
+  display: block;
+  margin-top: 10px;
+  /*border: 2px solid rgb(0, 255, 136);*/
+}
+
+.title h1 {
+  font-size: 80px;
+  letter-spacing: 20px;
+  /*border: 2px solid red;*/
+}
+
+.title-exp {
+  /*border: 2px solid red;*/
+  margin-bottom: 20px;
+}
+
+/*=============EXP BUTTONS =============*/
+.exp-box {
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+  /*border: 2px solid rgb(97, 0, 84);*/
+}
+
+.exp-titles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-around;
+  gap: 20px;
+  /*border: 2px solid red;*/
+}
+
+.exp-title {
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.exp-title:hover,
+.exp-title.active {
+  background-color: #b1c0d3;
+  color: white;
+}
+
+.exp-description {
+  flex: 2;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: border-right 0.3s ease;
+  /*border: 2px solid rgb(0, 255, 191);*/
+}
+
+/*=============JOB DESCRIPTION =============*/
+
+.job-description h1 {
+  font-size: 1.5rem;
+  font-family: "Poppins-medium", monospace;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.job-description h2 {
+  font-size: 1rem;
+  font-family: "Poppins-medium", monospace;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.job-description h3 {
+  font-size: 1rem;
+  font-family: "Poppins-medium", monospace;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.job-description ul {
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.job-description li {
+  margin-bottom: 0.4rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}
+
+/*=============WRAPPERS=============*/
+.exp-edu-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.experience {
+  flex: 2;
+  /*border: 2px solid #6c4877;*/
+  padding: 10px;
+}
+
+.education {
+  flex: 1;
+  /*border: 2px solid #ccc;*/
+  padding: 10px;
+}
+
+/*=============EDUCATION=============*/
+
+.edu-entry {
+  margin-bottom: 30px;
+}
+
+.edu-entry h1 {
+  font-size: 1.5rem;
+  font-family: "Poppins-medium", monospace;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.edu-entry h3 {
+  font-size: 1rem;
+  font-family: "Poppins-medium", monospace;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.edu-entry ul {
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.edu-entry li {
+  margin-bottom: 0.4rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}

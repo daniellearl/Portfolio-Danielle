@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tight-line-spacing {
+  line-height: 1;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 170px 50px;
+  /*border: 2px dashed red;*/
+}
+
+.intro-text {
+  animation: slideInFromLeft 1s ease-out forwards;
+  white-space: nowrap;
+  max-width: 60%;
+  font-size: 50px;
+  /*border: 2px solid blue; */
+  padding: 20px;
+  position: relative;
+  top: -40px;
+  letter-spacing: 30px;
+  margin-left: 100px;
+}
+
+.name-title {
+  white-space: nowrap;
+  margin-left: 100px;
+  font-size: 150px;
+}
+.lastname-title {
+  white-space: nowrap;
+  margin-left: 120px;
+  font-size: 150px;
+}
+
+.intro-image-container {
+  animation: slideInFromBottom 1s ease-out forwards;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  top: 60px;
+  overflow: hidden;
+  /*border: 2px solid green; */
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
