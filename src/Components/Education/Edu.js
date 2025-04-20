@@ -69,7 +69,10 @@ const Edu = () => {
   return (
     <div className="edu">
       <div className="title">
-        <h1 className="poppins-medium">EDUCATION AND EXPERIENCE</h1>
+        <h1>
+          EDUCATION AND <br />
+          EXPERIENCE
+        </h1>
       </div>
 
       <div className="exp-edu-wrapper">

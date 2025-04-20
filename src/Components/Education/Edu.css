@@ -1,13 +1,31 @@
 .edu {
+  position: relative;
   padding: 20px;
   margin: 0 190px;
-  display: block;
   margin-top: 10px;
-  /*border: 2px solid rgb(0, 255, 136);*/
+  display: block;
+  color: white;
+  z-index: 1;
+  overflow: visible;
+}
+
+.edu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: calc(100% + 500px);
+  height: 100%;
+  background-image: url("../../assets/edu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .title h1 {
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: 20px;
   /*border: 2px solid red;*/
 }
@@ -38,23 +56,22 @@
   cursor: pointer;
   padding: 10px;
   transition: background 0.3s ease;
-  border-radius: 5px;
 }
 
 .exp-title:hover,
 .exp-title.active {
-  background-color: #b1c0d3;
+  background-color: #000000;
   color: white;
 }
 
 .exp-description {
   flex: 2;
   padding: 20px;
-  background-color: #f9f9f9;
+  border-radius: 5px;
   font-size: 16px;
   display: flex;
   align-items: center;
-  transition: border-right 0.3s ease;
+  transition: border-right 1s ease;
   /*border: 2px solid rgb(0, 255, 191);*/
 }
 
@@ -62,16 +79,13 @@
 
 .job-description h1 {
   font-size: 1.5rem;
-  font-family: "Poppins-medium", monospace;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
 .job-description h2 {
   font-size: 1rem;
-  font-family: "Poppins-medium", monospace;
   font-weight: 500;
-  color: #666;
   margin-bottom: 0.2rem;
 }
 
@@ -91,7 +105,6 @@
 
 .job-description li {
   margin-bottom: 0.4rem;
-  font-family: "Fira Code", monospace;
   font-weight: 400;
 }
 
@@ -122,14 +135,12 @@
 
 .edu-entry h1 {
   font-size: 1.5rem;
-  font-family: "Poppins-medium", monospace;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
 .edu-entry h3 {
   font-size: 1rem;
-  font-family: "Poppins-medium", monospace;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -143,6 +154,6 @@
 
 .edu-entry li {
   margin-bottom: 0.4rem;
-  font-family: "Fira Code", monospace;
+  font-family: "poppins-medium", monospace;
   font-weight: 400;
 }

@@ -5,12 +5,12 @@
   font-weight: 100;
 }
 
-.poppins-regular {
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
-.poppins-medium {
+h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }

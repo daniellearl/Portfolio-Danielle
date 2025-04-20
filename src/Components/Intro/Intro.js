@@ -1,22 +1,23 @@
 import React from "react";
 import "./Intro.css";
-import Picture from "../../assets/Filler.jpg";
+import "../../App.css";
+
+import Picture from "../../assets/intro.jpg";
 
 const Intro = () => {
   return (
-    <div className="intro-container">
-      <div className="intro-text">
-        <h1 className="poppins-thin">HI I'M</h1>
-        <h1 className="name-title poppins-regular tight-line-spacing">
-          DANIELLE
-        </h1>
-        <h1 className="lastname-title poppins-regular tight-line-spacing">
-          ARLANTICO!
-        </h1>
-      </div>
-
-      <div className="intro-image-container">
-        <img src={Picture} className="intro-image" />
+    <div
+      className="intro-background"
+      style={{ backgroundImage: `url(${Picture})` }}
+    >
+      <div className="intro-overlay">
+        <div className="intro-text">
+          <h1>Hi! I'm</h1>
+          <h1> Danielle Arlantico</h1>
+          <h2>
+            A student developing efficient and effective software solutions.
+          </h2>
+        </div>
       </div>
     </div>
   );

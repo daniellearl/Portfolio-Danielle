@@ -13,16 +13,16 @@
 }
 
 .about-title {
-  padding: 20px;
+  padding: 10px;
   position: relative;
   margin-left: 200px;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 20px;
   /*border: 2px solid rebeccapurple;*/
 }
 
 .about-text {
-  padding: 20px;
+  padding: 15px;
   position: relative;
   margin-left: 200px;
   /*border: 2px solid red;*/
@@ -47,7 +47,6 @@
 }
 
 .techlist li {
-  font-family: "Fira Code", monospace;
   font-weight: 400;
 }
 

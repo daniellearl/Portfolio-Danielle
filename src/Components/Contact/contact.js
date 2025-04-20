@@ -5,11 +5,11 @@ import "./contact.css";
 const Contact = () => {
   return (
     <div className="contact">
-      <h1 className="poppins-medium">Contact</h1>
-      <h2 className="fira-code">
+      <h1>Contact</h1>
+      <h2>
         Let's Work Together!
         <br />
-        I’m always open to cool projects and new opportunities! You can find my
+        I’m always open to cool projects and new opportunities. You can find my
         LinkedIn, Email, and GitHub down below, feel free to reach out anytime!
       </h2>
 
@@ -27,6 +27,14 @@ const Contact = () => {
           className="contact-button"
         >
           Email
+        </a>
+        <a
+          href="https://github.com/daniellearl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-button"
+        >
+          GitHub
         </a>
       </div>
     </div>

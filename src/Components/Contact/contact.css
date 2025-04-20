@@ -1,13 +1,30 @@
 .contact {
-  /*border: 2px solid red;*/
+  position: relative; 
   padding: 20px;
   margin: 0 190px;
-  display: block;
   margin-top: 10px;
   text-align: center;
+  border-radius: 16px;
+  overflow: visible;
+  color: white;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: calc(100% + 500px);
+  height: 100%;
+  background-image: url("../../assets/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .contact h1 {
+  padding: 20px;
   font-size: 50px;
   letter-spacing: 10px;
 }
@@ -16,6 +33,7 @@
   font-size: 17px;
 }
 .contact-buttons {
+  padding: 20px;
   margin-top: 20px;
   display: flex;
   gap: 15px;
@@ -24,12 +42,12 @@
 
 .contact-button {
   padding: 10px 20px;
-  background-color: #e2b9d5;
+  background-color: #242222;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .contact-button:hover {
