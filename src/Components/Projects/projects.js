@@ -8,7 +8,7 @@ import websiteDemo from "../../assets/Website-Demo.mp4";
 
 const Projects = () => {
   return (
-    <div className="project">
+    <section id="projects" className="project">
       <div className="project-box">
         <h1>PROJECTS</h1>
       </div>
@@ -171,7 +171,7 @@ const Projects = () => {
           </h1>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import image from "../../assets/about.jpg";
 
 const About = () => {
   return (
-    <div className="about ">
+    <section id="about" className="about ">
       <div className="about-box ">
         <div className="about-title">
           <h1>ABOUT ME</h1>
@@ -43,7 +43,7 @@ const About = () => {
       <div className="image-box">
         <img src={image} className="image" />
       </div>
-    </div>
+    </section>
   );
 };
 

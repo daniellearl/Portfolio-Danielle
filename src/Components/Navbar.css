@@ -3,39 +3,138 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 10%;
-  background: rgb(255, 255, 255);
+  padding: 20px;
+  background: rgba(65, 63, 63, 0.5);
   display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 100;
+  /*border: 2px solid salmon;*/
 }
 
 .navbar {
-  font-weight: 400;
-  font-size: 30px;
-  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*border: 2px solid salmon;*/
 }
 
-.navbar a {
-  font-family: "poppins-regular", monospace;
+.navbar h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-links a {
   position: relative;
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-  margin-left: 45px;
+  font-size: 20px;
+  color: white;
+  margin: 0;
 }
 
-.navbar a::before {
+.nav-links a::before {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background: #000000;
-  transition: 0.3s;
+  background: black;
+  transition: width 0.3s ease;
 }
 
-.navbar a:hover::before {
+.nav-links a:hover::before {
   width: 100%;
+}
+
+.stacked {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin-left: 45px;
+}
+
+.nav-links.open {
+  display: block;
+}
+
+.close-btn {
+  display: none;
+}
+
+/*Dropdown Menu*/
+@media (max-width: 1000px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 100;
+    /*border: 2px solid salmon;*/
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar h1 {
+    font-size: 30px;
+  }
+
+  .nav-links.open .close-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(116, 107, 196);
+    z-index: 99;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-links a {
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: none;
+  }
+
+  .nav-links a::before {
+    width: 0;
+    background: transparent;
+  }
+  
+  .stacked {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }

@@ -60,14 +60,11 @@
   border-radius: 10px;
 }
 
-
 .image-box {
   width: 50%;
   height: 50%;
   margin-top: 100px;
-  align-self: flex-start; 
-  margin-left:-300px;
+  align-self: flex-start;
+  margin-left: -300px;
   border: 2px solid rgb(0, 255, 157);
 }
-
-

@@ -3,10 +3,12 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-content">
-        <p className="footer-text">Built and Designed by Danielle Arlantico © 2025 <br /> Photos sourced from Unsplash</p>
-        
+        <p className="footer-text">
+          Built and Designed by Danielle Arlantico © 2025 <br /> Photos sourced
+          from Unsplash
+        </p>
       </div>
     </footer>
   );

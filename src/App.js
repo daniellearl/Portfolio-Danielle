@@ -10,13 +10,15 @@ import Footer from "./Components/footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <Intro />
-      <About />
-      <Edu />
-      <Projects />
-      <Contact />
+      <div className="content">
+        <Intro />
+        <About />
+        <Edu />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

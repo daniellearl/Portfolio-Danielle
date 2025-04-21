@@ -20,8 +20,18 @@ h2 {
   font-weight: 700;
 }
 
-.fira-code {
-  font-family: "Fira Code", monospace;
-  font-weight: 400;
-  font-style: normal;
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 80px;
+}
+
+#education {
+  padding-top: 100px;
+}
+
+#projects {
+  padding-top: 100px;
 }

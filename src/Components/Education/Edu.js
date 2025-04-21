@@ -67,7 +67,7 @@ const Edu = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="edu">
+    <section id="education" className="edu">
       <div className="title">
         <h1>
           EDUCATION AND <br />
@@ -128,7 +128,7 @@ const Edu = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
