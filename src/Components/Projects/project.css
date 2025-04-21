@@ -1,70 +1,68 @@
 .project {
-  /*border: 2px solid red;*/
-  padding: 20px;
-  margin: 0 190px;
-  display: block;
-  margin-top: 10px;
+  padding: 10px;
+  margin: 5px auto; 
+  max-width: 1500px; 
+  padding-bottom: 60px;
 }
 
 .project-box {
   font-size: 35px;
-  letter-spacing: 20px;
-  margin-left: 0.5%;
-  margin-bottom: -10px;
+  letter-spacing: 10px;
 }
+
 
 .project-title {
-  font-size: 50px;
-  margin-bottom: -40px;
-  /*border: 2px solid red;*/
+  font-size: 40px;
 }
 
-/*=============PROJECT LANGUAGES=============*/
+/*PROJECT LANGUAGES*/
 .project-lang {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .project-info {
-  margin-left: 0.6%;
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  text-align: left;
 }
 
 .project-lang h2 {
-  font-size: 35px;
+  font-size: 19px;
 }
 .lang-container {
   display: flex;
   gap: 10px;
+  
 }
 
 .lang {
   background-color: #000000;
-  padding: 10px 20px;
+  padding: 4px 20px;
   border-radius: 12px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .lang h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
-/*=============PROJECT ICONS=============*/
+/*ICONS*/
 
 .project-icons {
-  overflow: hidden;
+  overflow: visible;
+  
 }
 
 .project-icons .youtube-icon {
-  width: 150px;
+  width: 80px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-right: 20px;
-  position: relative;
-  top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .project-icons .github-icon {
@@ -83,25 +81,21 @@
   transform: scale(1.2);
 }
 
-/*=============PROJECT DEMO=============*/
+/*PROJECT DEMO*/
 .project-row {
   display: flex;
   gap: 5rem;
 }
-.project-title {
-  /*border: 2px solid purple;*/
-  padding: 10px;
-}
+
 .project-photo {
   /*border: 2px solid blue;*/
   padding: 10px;
 }
 .project-photo h1 {
-  margin-top: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-/*=============PROJECT DESCRIPTION=============*/
+/*PROJECT DESCRIPTION*/
 .project-des {
   /*border: 2px solid rgb(255, 0, 76);*/
   padding: 10px;
@@ -109,7 +103,7 @@
 }
 
 .project-des ul {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   margin-top: 1rem;
   margin-left: 40px;
@@ -123,3 +117,66 @@
   font-family: "poppins-medium", monospace;
   font-weight: 400;
 }
+
+@media (max-width: 1300px) {
+  .project-photo {
+    display: none;
+  }
+
+  .project-lang {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-info {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  .project-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .project-icons .youtube-icon,
+  .project-icons .github-icon {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 5px;
+    margin-bottom: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .project-icons .youtube-icon:hover,
+  .project-icons .github-icon:hover {
+    transform: scale(1.1); 
+  }
+
+  .project-des {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .project-des ul {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .lang h1 {
+    font-size: 14px;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+
+  .project-box {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+}
+

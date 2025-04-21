@@ -53,3 +53,33 @@
 .contact-button:hover {
   background-color: #18191a;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 20px; 
+    padding: 15px;  
+  }
+
+  .contact h1 {
+    font-size: 27px; 
+    letter-spacing: 5px; 
+  }
+
+  .contact h2 {
+    font-size: 16px; 
+  }
+
+  .contact-buttons {
+    display: flex;
+    padding: 5px;
+  }
+
+  .contact-button {
+    padding: 6px 12px;   
+    font-size: 12px;      
+    width: auto;          
+    max-width: 200px;     
+    margin: 5px auto;     
+  }
+}
+

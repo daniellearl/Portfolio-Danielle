@@ -28,9 +28,7 @@ const Projects = () => {
             <div className="lang">
               <h1>GitHub</h1>
             </div>
-            <div className="lang">
-              <h1>Visual Studio Code</h1>
-            </div>
+
           </div>
         </div>
         <div className="project-icons">
@@ -67,8 +65,7 @@ const Projects = () => {
             Your browser does not support the video tag.
           </video>
           <h1>
-            Developed by Danielle Arlantico with Joy Zhu, Edward Vuong, and
-            Andreii
+            Developed by Danielle Arlantico with Joy Zhu, Edward Vuong, Crist Choy and Andreii Dela Rosa
           </h1>
         </div>
 
@@ -101,9 +98,6 @@ const Projects = () => {
         <div className="project-info">
           <h2>Technology Stacks</h2>
           <div className="lang-container">
-            <div className="lang">
-              <h1>Visual Studio Code</h1>
-            </div>
             <div className="lang">
               <h1>React.js</h1>
             </div>
@@ -152,22 +146,16 @@ const Projects = () => {
 
         <div className="project-des">
           <h1>
-            I'm currently developing this website from scratch. On the side,
-            there's demo showing how I built the experience adn education
-            component. Some features are still in progress and will be added
-            soon!
+          I'm currently building this website from scratch. On the side, you'll find a demo showcasing how I developed the experience and education components. Some features are still in progress and will be added soon
             <br />
             Developing features:
           </h1>
           <ul className="list">
             <li>Dark Mode</li>
-            <li>Phone Compatability</li>
             <li>Contact Form</li>
           </ul>
           <h1>
-            If you're curious about how this website was built, check out the
-            live coding demo on the side or explore the code by downloading our
-            GitHub repository!
+          If you're curious about how this website was built, click on the Github Icon to view my GitHub repository where you can explore the code!
           </h1>
         </div>
       </div>

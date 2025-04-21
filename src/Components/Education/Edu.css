@@ -25,7 +25,7 @@
 }
 
 .title h1 {
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 20px;
   /*border: 2px solid red;*/
 }
@@ -156,4 +156,100 @@
   margin-bottom: 0.4rem;
   font-family: "poppins-medium", monospace;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .edu {
+    margin: 0 40px;
+    padding-bottom: 40px;
+  }
+
+  .exp-edu-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  .exp-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .exp-description {
+    padding: 10px;
+  }
+
+  .exp-titles {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .exp-title {
+    min-width: 150px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.3;
+    padding-bottom: 10px;
+  }
+  .exp-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .exp-titles {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa transparent;
+  }
+
+  .exp-titles::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .exp-titles::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  .exp-title {
+    flex: 0 0 auto;
+    min-width: 120px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+  }
+
+  .exp-title:hover,
+  .exp-title.active {
+    background-color: #000;
+    color: white;
+  }
+
+  .exp-description {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
 }

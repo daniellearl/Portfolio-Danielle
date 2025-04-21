@@ -1,70 +1,99 @@
 .about {
   display: flex;
-  /*border: 2px solid rgb(255, 187, 0);*/
-  position: relative;
-  margin: 0 200px;
-  margin-top: 10px;
-  color: rgb(0, 0, 0);
-  z-index: 1;
-  overflow: visible;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 5rem;
+  color: black;
 }
 
 .about-box {
+  flex: 1 1 400px;
+  max-width: 600px;
   display: flex;
-  margin-right: 20%;
-  position: relative;
   flex-direction: column;
-  padding-right: 200px;
-  /*border: 2px solid blue;*/
 }
 
-.about-title {
-  padding: 10px;
-  position: relative;
-  font-size: 35px;
-  letter-spacing: 20px;
-  /*border: 2px solid rebeccapurple;*/
+.about-title h1 {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  margin-bottom: 1rem;
 }
 
-.about-text {
-  padding: 15px;
-  position: relative;
-  /*border: 2px solid red;*/
-  font-size: x-small;
+.about-text h1 {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: normal;
 }
 
 .tech {
-  padding: 20px;
-  position: relative;
-  /*border: 2px solid red;*/
+  margin-top: 2rem;
+}
+
+.tech h2 {
+  font-size: 1.5rem;
 }
 
 .techlist {
-  font-size: 20px;
-  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  padding-left: 1.5rem;
   list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 2rem;
 }
 
 .techlist li {
+  font-size: 1rem;
   font-weight: 400;
 }
 
+.image-box {
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
 .image {
-  width: 110%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.image-box {
-  width: 50%;
-  height: 50%;
-  margin-top: 100px;
-  align-self: flex-start;
-  margin-left: -300px;
-  border: 2px solid rgb(0, 255, 157);
+@media screen and (max-width: 900px) {
+  .image-box {
+    display: none;
+  }
+
+  .about {
+    padding: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-box {
+    padding-right: 0;
+  }
+
+  .about-title h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .about-text h1 {
+    font-size: 0.95rem;
+  }
+
+  .tech h2 {
+    font-size: 1.25rem;
+  }
+
+  .techlist li {
+    font-size: 0.95rem;
+  }
 }
+
+
