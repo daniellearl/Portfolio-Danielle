@@ -1,4 +1,3 @@
-/* NEW: Fullscreen image background */
 .intro-background {
   position: relative;
   width: 100%;
@@ -9,7 +8,6 @@
   overflow: hidden;
 }
 
-/* NEW: Optional overlay for better text visibility */
 .intro-overlay {
   position: absolute;
   top: 0;
@@ -19,21 +17,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(46, 44, 44, 0.301);
 }
 
 .intro-text h1 {
-  animation: slideInFromLeft 1s ease-out forwards;
   text-align: center;
   color: white;
-  font-size: 70px;
+  font-size: 4rem;
   letter-spacing: 10px;
-  font-family: "poppins-regular", monospace;
+  font-family: "poppins-bold", monospace;
 }
 
 .intro-text h2 {
   margin-top: 2%;
-  font-size: 20px;
-  font-family: "poppins-thin", monospace;
+  font-size: 1.3rem;
+  font-family: "poppins-regular", monospace;
   text-align: center;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .intro-text h1 {
+    font-size: 2rem; 
+  }
+
+  .intro-text h2 {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text h2 {
+    font-size: 0.8rem; 
+  }
 }
