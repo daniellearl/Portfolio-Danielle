@@ -112,7 +112,7 @@ const Edu = () => {
             <h1>
               Auckland University of Technology, <br /> City Campus
             </h1>
-            <h3>2023–2026</h3>
+            <h3>2023–2025</h3>
             <div className="edu-list">
               <li>AUT Student Ambassador (2024–2025)</li>
             </div>

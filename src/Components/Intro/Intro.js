@@ -11,7 +11,7 @@ const Intro = () => {
       <div className="intro-overlay">
         <div className="intro-text">
           <h1>Hi! I'm</h1>
-          <h1 className="intro-name">Danielle Arlantico</h1>
+          <h1 className="intro-name">Danielle Denise Arlantico</h1>
           <h2 className="intro-subtitle">
             A student developing efficient and effective software solutions.
           </h2>

@@ -28,7 +28,7 @@ const Contact = () => {
         Let's Work Together!
         <br />
         I’m always open to cool projects and new opportunities. You can find my
-        LinkedIn, Email, and GitHub down below — feel free to reach out anytime!
+        LinkedIn, Email, and GitHub down below, feel free to reach out anytime!
       </h2>
 
       <div className="contact-buttons">

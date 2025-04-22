@@ -105,7 +105,7 @@ const Projects = () => {
         techStack={["React.js", "CSS", "Vercel"]}
         videoSrc={websiteDemo}
         contributors="Developed by Danielle Arlantico"
-        description={`I'm currently building this website from scratch. On the side, you'll find a demo showcasing how I developed the experience and education components. Some features are still in progress and will be added soon. Developing features:`}
+        description={`I'm currently building this website from scratch. On the side, you'll find a demo showcasing how I developed the experience and education components (available on desktop). Some features are still in progress and will be added soon. Developing features:`}
         features={["Dark Mode", "Contact Form"]}
         githubLink="https://github.com/daniellearl/portfolio"
       />
