@@ -4,62 +4,42 @@ import "../../App.css";
 
 const data = [
   {
-    title: "Honest Chocolat",
-    description: (
-      <div className="job-description">
-        <h1>
-          Honest Chocolat, <br /> Commercial Bay
-        </h1>
-        <h2>2023–2024</h2>
-        <h3>Sales Assistant</h3>
-        <ul>
-          <li>Recommended and upsold products</li>
-          <li>Made quality drinks and processed orders quickly</li>
-          <li>Completed cleaning tasks according to standards</li>
-          <li>Handled customer complaints professionally</li>
-          <li>
-            Packed and prepared orders for hotel, company, and online orders
-          </li>
-        </ul>
-      </div>
-    ),
+    company: "Honest Chocolat",
+    location: "Commercial Bay",
+    year: "2023–2024",
+    role: "Sales Assistant",
+    duties: [
+      "Recommended and upsold products",
+      "Made quality drinks and processed orders quickly",
+      "Completed cleaning tasks according to standards",
+      "Handled customer complaints professionally",
+      "Packed and prepared orders for hotel, company, and online orders",
+    ],
   },
   {
-    title: "Mainsail Bar and Bristo",
-    description: (
-      <div className="job-description">
-        <h1>
-          Mainsail Bar and Bristo, <br /> Gulf Harbour
-        </h1>
-        <h2>2022–2022</h2>
-        <h3>Front of House</h3>
-        <ul>
-          <li>Served guests in a busy 30+ table bar and restaurant</li>
-          <li>Handled bookings and takeaway orders via phone</li>
-          <li>Delivered food and beverages and packed takeaways</li>
-          <li>Engaged with customers to enhance their experience</li>
-          <li>Resolved complaints promptly and professionally</li>
-        </ul>
-      </div>
-    ),
+    company: "Mainsail Bar and Bristo",
+    location: "Gulf Harbour",
+    year: "2022–2022",
+    role: "Front of House",
+    duties: [
+      "Served guests in a busy 30+ table bar and restaurant",
+      "Handled bookings and takeaway orders via phone",
+      "Delivered food and beverages and packed takeaways",
+      "Engaged with customers to enhance their experience",
+      "Resolved complaints promptly and professionally",
+    ],
   },
   {
-    title: "Bombay to Goa",
-    description: (
-      <div className="job-description">
-        <h1>
-          Bombay to Goa, <br /> Gulf Harbour
-        </h1>
-        <h2>2022–2022</h2>
-        <h3>Front of House</h3>
-        <ul>
-          <li>Supported team during peak hours to ensure a smooth service</li>
-          <li>Promoted meals and drinks to enhance customer experience</li>
-          <li>Explained specials, took orders, and answered guest questions</li>
-          <li>Offered tailored recommendations</li>
-        </ul>
-      </div>
-    ),
+    company: "Bombay to Goa",
+    location: "Gulf Harbour",
+    year: "2022–2022",
+    role: "Front of House",
+    duties: [
+      "Supported team during peak hours to ensure a smooth service",
+      "Promoted meals and drinks to enhance customer experience",
+      "Explained specials, took orders, and answered guest questions",
+      "Offered tailored recommendations",
+    ],
   },
 ];
 
@@ -76,7 +56,7 @@ const Edu = () => {
       </div>
 
       <div className="exp-edu-wrapper">
-        {/*EXPERIENCE*/}
+        {/* EXPERIENCE */}
         <div className="experience">
           <div className="title-exp">
             <h1>Experience</h1>
@@ -89,17 +69,28 @@ const Edu = () => {
                   className={`exp-title ${selected === index ? "active" : ""}`}
                   onClick={() => setSelected(index)}
                 >
-                  {item.title}
+                  {item.company}
                 </div>
               ))}
             </div>
             <div className="exp-description">
-              <p>{data[selected].description}</p>
+              <div className="job-description">
+                <h1>
+                  {data[selected].company}, <br /> {data[selected].location}
+                </h1>
+                <h2>{data[selected].year}</h2>
+                <h3>{data[selected].role}</h3>
+                <ul>
+                  {data[selected].duties.map((duty, i) => (
+                    <li key={i}>{duty}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
-        {/*EDUCATION*/}
+        {/* EDUCATION */}
         <div className="education">
           <div className="edu-title">
             <h1>Education</h1>
