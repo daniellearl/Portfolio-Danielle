@@ -5,7 +5,7 @@ import image from "../../assets/about.jpg";
 
 const techStacks = [
   "HTML", "CSS", "JavaScript", "React.js", "SQL",
-  "Python", "Java", "C#", "C", "C++", "PHP"
+  "Python", "Java", "C#", "C", "C++", "PHP", "Vercel", "GitHub"
 ];
 
 const About = () => {
