@@ -4,6 +4,7 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 REACT / JSX / CSS  
 
 🚀 Features
+
 📁 Project showcase with descriptions and links
 
 🧠 About me section highlighting skills and experience
