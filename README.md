@@ -8,10 +8,11 @@ REACT / JSX / CSS
 
 🧠 About me section highlighting skills and experience
 
-📫 Contact form or links to social platforms
+📫 Links to social platforms
 
 💻 Mobile-friendly and optimized for performance
 
 📸 Live Demo
-Check it out here: https://danielle-portfolio-gules.vercel.app/
+Check out my live demo here!
+https://danielle-portfolio-gules.vercel.app/
 
