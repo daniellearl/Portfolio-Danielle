@@ -107,7 +107,7 @@ const Projects = () => {
         contributors="Developed by Danielle Arlantico"
         description={`I'm currently building this website from scratch. On the side, you'll find a demo showcasing how I developed the experience and education components (available on desktop). Some features are still in progress and will be added soon. Developing features:`}
         features={["Dark Mode", "Contact Form"]}
-        githubLink="https://github.com/daniellearl/portfolio"
+        githubLink="https://github.com/denisearl/Portfolio-Danielle"
       />
     </section>
   );

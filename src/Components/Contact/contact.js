@@ -15,7 +15,7 @@ const contactLinks = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/daniellearl",
+    href: "https://github.com/denisearl",
     external: true,
   },
 ];
