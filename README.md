@@ -1,7 +1,7 @@
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as a developer. It's a space where I share the work I'm most proud of and give a little insight into who I am professionally.
 
 🔧 Built With
-REACT / JSX / CSS  
+HTML / CSS / JS -> REACT.JS 
 
 🚀 Features
 
@@ -15,5 +15,5 @@ REACT / JSX / CSS
 
 📸 Live Demo
 Check out my live demo here!
-https://danielle-portfolio-gules.vercel.app/
+https://portfolio-danielle-7dc5ervc4-danielles-projects-f625cc64.vercel.app/
 
